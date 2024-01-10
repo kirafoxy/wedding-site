@@ -1,0 +1,156 @@
+body{
+    margin: 0 auto;
+    font-family: 'Lora';
+    width: 1440px;
+    height: 827px;
+}
+.container{
+    margin: 55px 160px;
+    width: 1120px;
+    height: 717px;
+}
+
+.introduction__title{
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    font-family: 'Lora';
+    letter-spacing: 1.08px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 48px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo{
+    margin: 0 auto ;
+   
+}
+
+.introduction__logo{
+    width: 22.29px;
+    height: 22.679px;
+    margin-bottom: 65.3px;
+
+}
+
+.logo:before ,
+.logo:after{
+    position: relative;
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    width: 120px;
+    height: 2px;
+    background: #EC5598;
+}
+.logo:before{
+    margin-left: 425px;
+} 
+
+.logo:after{
+   
+
+}
+.services{
+    display: flex;
+
+    justify-content: center;
+    gap: 65px;
+    
+}
+
+.service-wrapper{
+    justify-content: center;
+    position: relative;
+}
+
+.image{
+
+    width: 330px;
+    height: 400px;
+    
+}
+
+.image-text{
+   
+    position: absolute;
+    top: 298px;
+    right: -1px;
+    width: 300px;
+    height: 145px;
+    background-color: #fff;
+    box-shadow: 25px 25px 50px 0px rgb(230 230 230);
+    
+}
+
+
+.image-text h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+
+    padding: 20px 0 0 15px;
+    line-height: 22px;
+   
+}
+
+.image-text p {
+    
+    padding-left: 15px;
+
+    line-height: 22px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 14px;
+
+    width: 218px;
+   
+   
+    
+}
+
+
+.image-text a{
+    
+    text-decoration: none;
+    color: #EC5598;;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Lato';
+    line-height: 16px
+}
+.image-text a::before{
+    margin-left: 153px;
+    margin-right: 5px;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 46px;
+    height: 1.5px;
+    background: #EC5598;
+}
+
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    margin-top: 108px;
+
+    width: 240px;
+    height: 60px;
+    color: #FF427F;
+    background: #FFF;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    border: 1.5px solid #FF427F;
+    cursor: pointer;
+}
