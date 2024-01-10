@@ -10,6 +10,10 @@ body{
     height: 717px;
 }
 
+.introduction{
+    width: 100%;
+}
+
 .introduction__title{
     text-transform: uppercase;
     margin-bottom: 13px;
@@ -24,7 +28,7 @@ body{
 
 .logo{
     margin: 0 auto ;
-   
+    display: inline;
 }
 
 .introduction__logo{
@@ -49,8 +53,6 @@ body{
     margin-left: 425px;
 } 
 
-.logo:after{
-   
 
 }
 .services{
@@ -74,7 +76,7 @@ body{
 }
 
 .image-text{
-   
+    line-height: 22px;
     position: absolute;
     top: 298px;
     right: -1px;
@@ -90,25 +92,17 @@ body{
     margin: 0;
     font-size: 20px;
     font-weight: bold;
-
     padding: 20px 0 0 15px;
-    line-height: 22px;
    
 }
 
 .image-text p {
-    
+    width: 218px;
     padding-left: 15px;
-
-    line-height: 22px;
     font-family: 'Lato';
     font-weight: 400;
     font-size: 14px;
 
-    width: 218px;
-   
-   
-    
 }
 
 
@@ -119,7 +113,7 @@ body{
     font-size: 16px;
     font-weight: 600;
     font-family: 'Lato';
-    line-height: 16px
+
 }
 .image-text a::before{
     margin-left: 153px;
@@ -153,4 +147,88 @@ body{
     border-radius: 2px;
     border: 1.5px solid #FF427F;
     cursor: pointer;
+}
+
+@media (max-width: 360px) {
+
+    body{
+        width: 100%;
+        height: 1604px;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 100%;
+        margin-left: 15px;
+    }
+    .introduction{
+        width: 330px;
+    }
+    .introduction__title{
+        margin: 0 auto;
+        height: 48px;
+        width: 215px;
+        font-size: 28px;
+        letter-spacing: 0.84px;
+    }
+
+    .services{
+
+        flex-direction: column;
+    }
+
+    .service-wrapper{
+        display: flex;
+        margin-bottom: 50px;
+        flex-direction: column;
+    }
+
+    .service-wrapper:last-child{
+        margin-bottom: 40px;
+    }
+
+    .image-text{
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        right: 61px;
+        
+    }
+
+    .image-text h2{
+        font-size: 20px;
+    }
+
+    .image-text a{
+        letter-spacing: -0.16px;
+    }
+
+    .image-text p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+    .btn-wrapper{
+        display: block;
+        width: 360px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+    .btn{
+        margin: 0 60px 15px 45px;
+        width: 240px;
+        height: 60px;
+        
+    }
+
+    .logo:before{
+        margin-left: 63px;
+    } 
+    .introduction__logo{
+        margin-bottom: 40.32px;
+    }
+    .logo:before ,
+    .logo:after {
+        width: 86px;
+    }
 }
